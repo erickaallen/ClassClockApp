@@ -14,10 +14,7 @@ class ReminderTableViewCell: UITableViewCell {
     
     @IBOutlet weak var dateAndTime: UITextField!
 
-    @IBOutlet weak var reminderText: UITextField!
-    
-    @IBAction func viewReminderDetail(_ sender: UIButton) {
-    }
+    @IBOutlet weak var title: UITextField!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -12,21 +12,22 @@ class Reminder {
     
     //MARK: Properties
     
-    var dateAndTime: Date
-    var reminderText: String
+    var dateAndTime: NSDate
+    var title: String
+    var notes: String
     
     // Initialization to fail if no reminderText given
     
     //MARK: Initialization
     
-    init?(dateAndTime: Date, reminderText: String) {
-        if reminderText.isEmpty {
+    init?(dateAndTime: NSDate, title: String, notes: String) {
+        if title.isEmpty {
             return nil
         }
         
         self.dateAndTime = dateAndTime
-        self.reminderText = reminderText
-        
+        self.title = title
+        self.notes = notes
     }
 }
 

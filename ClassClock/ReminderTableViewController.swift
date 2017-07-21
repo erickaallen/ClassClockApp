@@ -12,10 +12,15 @@ class ReminderTableViewController: UITableViewController {
     
     //MARK: Properties
     
+    let dateFormatter = DateFormatter()
+    
     var reminders = [Reminder]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Load the sample reminders
+        /// loadSampleReminders()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -28,24 +33,26 @@ class ReminderTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return reminders.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cellIdentifier = "ReminderTableViewCell"
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ReminderTableViewCell else {
+            fatalError("The dequeued cell is not an instance of ReminderTableViewCell.")
+        }
 
-        // Configure the cell...
-
+        let reminder = reminders[indexPath.row]
+        // cell.dateAndTime = reminder.dateAndTime
+        cell.title.text = reminder.title
+        
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.
@@ -91,6 +98,23 @@ class ReminderTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: Private Methods
+    
+//    private func loadSampleReminders() {
+//        guard let reminder1 = Reminder(dateAndTime: dateFormatter.date(from: "2017-07-21T10:57:37+0000")! as NSDate, title: "Visitors to class", notes: "Visitors for career day") else {
+//            fatalError("Unable to instantiate reminder1")
+//        
+//        }
+//        guard let reminder2 = Reminder(dateAndTime: dateFormatter.date(from: "2017-07-21T10:57:37+0000")! as NSDate, title: "Reading Group - Red", notes: "Take garbage out after work") else {
+//            fatalError("Unable to instantiate reminder2")
+//        }
+//        guard let reminder3 = Reminder(dateAndTime: dateFormatter.date(from: "2017-07-21T10:57:37+0000")! as NSDate, title: "T.C. to ESL", notes: "Take scissors") else {
+//            fatalError("Unable to instantiate reminder3")
+//        }
+//        
+//        reminders += [reminder1, reminder2, reminder3]
+//    }
     
 }
 
