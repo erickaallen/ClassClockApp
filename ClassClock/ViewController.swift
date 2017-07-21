@@ -41,10 +41,10 @@ class ViewController: UIViewController {
         content.title = "This is your notification title!"
         content.body = "Time's up!"
         
-        let timerIconURL = Bundle.main.url(forResource: "timer", withExtension: "png")!
+//        let timerIconURL = Bundle.main.url(forResource: "timer", withExtension: "png")!
         
-        let imageAttachment = try! UNNotificationAttachment(identifier: timerGraphicAttachmentIdentifier, url: timerIconURL, options: nil)
-        content.attachments.append(imageAttachment)
+//        let imageAttachment = try! UNNotificationAttachment(identifier: timerGraphicAttachmentIdentifier, url: timerIconURL, options: nil)
+//        content.attachments.append(imageAttachment)
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10.0, repeats: false)
         

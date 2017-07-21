@@ -14,6 +14,9 @@
 		4017661E1EF2112600BA0AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4017661C1EF2112600BA0AA9 /* LaunchScreen.storyboard */; };
 		401766291EF2112600BA0AA9 /* ClassClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401766281EF2112600BA0AA9 /* ClassClockTests.swift */; };
 		401766341EF2112600BA0AA9 /* ClassClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401766331EF2112600BA0AA9 /* ClassClockUITests.swift */; };
+		40A5AB7D1F1BEE470034705C /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A5AB7C1F1BEE470034705C /* Reminder.swift */; };
+		40A5AB7F1F1BF98A0034705C /* ReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A5AB7E1F1BF98A0034705C /* ReminderTableViewCell.swift */; };
+		40A5AB811F1C03090034705C /* ReminderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A5AB801F1C03090034705C /* ReminderTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		4017662F1EF2112600BA0AA9 /* ClassClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		401766331EF2112600BA0AA9 /* ClassClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassClockUITests.swift; sourceTree = "<group>"; };
 		401766351EF2112600BA0AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40A5AB7C1F1BEE470034705C /* Reminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reminder.swift; path = ../Reminder.swift; sourceTree = "<group>"; };
+		40A5AB7E1F1BF98A0034705C /* ReminderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReminderTableViewCell.swift; path = ../ReminderTableViewCell.swift; sourceTree = "<group>"; };
+		40A5AB801F1C03090034705C /* ReminderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,15 @@
 		401766121EF2112600BA0AA9 /* ClassClock */ = {
 			isa = PBXGroup;
 			children = (
+				40A5AB7C1F1BEE470034705C /* Reminder.swift */,
+				40A5AB7E1F1BF98A0034705C /* ReminderTableViewCell.swift */,
 				401766131EF2112600BA0AA9 /* AppDelegate.swift */,
 				401766151EF2112600BA0AA9 /* ViewController.swift */,
 				401766171EF2112600BA0AA9 /* Main.storyboard */,
 				4017661A1EF2112600BA0AA9 /* Assets.xcassets */,
 				4017661C1EF2112600BA0AA9 /* LaunchScreen.storyboard */,
 				4017661F1EF2112600BA0AA9 /* Info.plist */,
+				40A5AB801F1C03090034705C /* ReminderTableViewController.swift */,
 			);
 			path = ClassClock;
 			sourceTree = "<group>";
@@ -262,8 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A5AB7D1F1BEE470034705C /* Reminder.swift in Sources */,
 				401766161EF2112600BA0AA9 /* ViewController.swift in Sources */,
 				401766141EF2112600BA0AA9 /* AppDelegate.swift in Sources */,
+				40A5AB811F1C03090034705C /* ReminderTableViewController.swift in Sources */,
+				40A5AB7F1F1BF98A0034705C /* ReminderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +528,7 @@
 				4017663A1EF2112600BA0AA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4017663B1EF2112600BA0AA9 /* Build configuration list for PBXNativeTarget "ClassClockTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +537,7 @@
 				4017663D1EF2112600BA0AA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4017663E1EF2112600BA0AA9 /* Build configuration list for PBXNativeTarget "ClassClockUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +546,7 @@
 				401766401EF2112600BA0AA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
