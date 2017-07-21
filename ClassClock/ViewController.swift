@@ -38,15 +38,15 @@ class ViewController: UIViewController {
     
     func scheduleNotification() {
         let content = UNMutableNotificationContent()
-        content.title = "This is your notification title!"
-        content.body = "Time's up!"
+        content.title = "Time's up!"
+        content.body = "This is your reminder from Class Clock that your selected time interval has passed."
         
 //        let timerIconURL = Bundle.main.url(forResource: "timer", withExtension: "png")!
         
 //        let imageAttachment = try! UNNotificationAttachment(identifier: timerGraphicAttachmentIdentifier, url: timerIconURL, options: nil)
 //        content.attachments.append(imageAttachment)
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10.0, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 30.0, repeats: false)
         
         let notificationRequest = UNNotificationRequest(identifier: timedNotificationIdentifier, content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(notificationRequest) { (error) in

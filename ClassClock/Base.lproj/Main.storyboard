@@ -24,7 +24,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygc-fF-Ke2">
                                 <rect key="frame" x="16" y="605" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Notify me in 10 seconds."/>
+                                <state key="normal" title="Notify me in 30 seconds."/>
                                 <connections>
                                     <action selector="didPressNotifyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="amy-Ha-Ibg"/>
                                 </connections>
@@ -143,7 +143,7 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReminderTableViewCell" rowHeight="90" id="s2C-Wn-G3O" customClass="ReminderTableViewCell" customModule="ClassClock" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s2C-Wn-G3O" id="Pcj-Xi-DFJ">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s2C-Wn-G3O" id="Pcj-Xi-DFJ" customClass="UITableViewCell">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -154,15 +154,6 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UyH-cI-udh">
-                                            <rect key="frame" x="288" y="8" width="79" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <state key="normal" title="View"/>
-                                            <connections>
-                                                <action selector="viewReminderDetail:" destination="s2C-Wn-G3O" eventType="touchUpInside" id="M9X-OL-olq"/>
-                                            </connections>
-                                        </button>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Example of reminder text" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dct-UV-3ex">
                                             <rect key="frame" x="8" y="46" width="359" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
